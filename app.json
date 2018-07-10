@@ -1,0 +1,39 @@
+{ "test":true,
+  "name": "alliancehire",
+  "displayName": "Alliance Hire",
+  "expo": {
+    "sdkVersion": "25.0.0",
+    "name": "Alliance Hire",
+    "version": "0.0.7",
+    "slug": "alliance-hire",
+    "icon": "./src/assets/appicon.png",
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "backgroundColor": "#FAF6ED",
+      "resizeMode": "contain"
+    },
+    "privacy": "unlisted",
+    "orientation": "portrait",
+    "primaryColor": "#253982",
+    "ios": {
+      "bundleIdentifier": "com.alliancehire.Trio",
+      "loadJSInBackgroundExperimental": true
+    },
+    "android": {
+      "package": "com.alliancehire.Trio"
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "alliance-hire",
+            "project": "alliancehireapp",
+            "authToken":
+              "22428f0441a44393a6b89dece6f85a106710851a73584a1d9dfee538b981c7d7"
+          }
+        }
+      ]
+    }
+  }
+}
